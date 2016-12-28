@@ -1,0 +1,247 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  background-color: black;
+  margin: 0px;
+}
+#navbar {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+.navitem {
+  color: white;
+  font-size: 25px;
+  display: block;
+  margin: 15px;
+  text-decoration: none;
+
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+}
+.navitem-hover {
+  font-size: 30px;
+}
+#pointer {
+  position: fixed;
+  height: 25px;
+  top: 18px;
+  margin-left: -10px;
+}
+#background {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#namebox {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+#typing {
+  position: relative;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+}
+/* Using Typed JS library */
+.typed-cursor {
+    opacity: 1;
+
+    animation: blink 0.7s infinite;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+
+    font-size: 30px;
+}
+@keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.frame {
+  margin: 0px;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+#propic {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+#linkbox {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+}
+.linkitem {
+  text-decoration: none;
+  color: white;
+  display: inline;
+  margin-right: 5px;
+}
+.logo {
+  height: 25px;
+}
+#workbackground {
+  z-index: -10;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+#workbackgroundcover {
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.workbox {
+  z-index: 10;
+  color: white;
+  display: none;
+  position: absolute;
+}
+#schoolbox {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  line-height: 45px;
+}
+#major {
+  font-size: 35px;
+  position: relative;
+}
+#school {
+  font-size: 30px;
+  position: relative;
+}
+#coursework {
+  position: absolute;
+  top: 25%;
+  left: 12%;
+}
+#workexperience {
+  position: absolute;
+  top: 60%;
+  left: 12%;
+}
+.workbox-title {
+  font-size: 30px;
+}
+.workbox-list {
+  font-size: 23px;
+}
+.maintext {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+/* Carousel styling borrowed from HW8 */
+.carousel-container {
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+#carousel {
+	height: 100%;
+	margin: auto;
+
+  transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+.carousel-item {
+	position: relative;
+	height: inherit;
+	float: left;
+  overflow: hidden;
+}
+.img-scaled {
+	width: 100%;
+	height: 100%;
+}
+#carousel-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    left: 20px;
+    top: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+
+    transition: all 0.3s;
+  	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: .5;
+}
+#carousel-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    right: 20px;
+    top: 40px;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid #fff;
+
+    transition: all 0.3s;
+  	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.carouselimage {
+  position: relative;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}

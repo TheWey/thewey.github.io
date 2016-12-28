@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="peer.min.js"></script>
+    <script type="text/javascript" src="Multiplexer.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <span id="myIDText">Enter desired ID: </span> <input type="text" id="myID" onkeypress="IDBoxKeyPressed(event)" autofocus />
+    <input type="button" onClick="register()" value="Register" id="registerButton"/><br>
+    <div id="stepConnect" hidden=true>Connect to: <input type="text" id="connectTo" onkeypress="connectBoxKeyPressed(event)"/>
+    <input type="button" onClick="connect()" value="Connect"/></div>
+    <br>
+    <div id="stepType" hidden=true>
+    <b>Connected to:</b>  <ul id="connectionList"></ul>
+    <textarea id="writeArea" onkeyup="sendUpdate()" style="width: 300px; height: 150px;"></textarea></div>
+  </body>
+</html>

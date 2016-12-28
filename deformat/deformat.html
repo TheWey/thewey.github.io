@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Text Deformatter</title>
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body style="margin-left:10px; margin-top:10px">
+	<h1>The Text Deformatter</h1>
+	Copied text stuck with pesky formatting? Remove it here!<br>
+	<p>
+		<b>How it works</b>
+		<ol>
+			<li><script> correctKey(); </script> + V</li><br>
+			<li>
+				Either<br><br>
+					<ul>
+						<li><b>select text: </b>Enter</li><br>
+						<li><b>remove returns then select: </b>Shift + Enter</li><br>
+					</ul>
+			</li>
+			<li><script> correctKey(); </script> + C</li>
+		</ol>
+	</p>
+	<textarea id="input" rows="10" cols="50" onkeypress="return onTextEnter(event)" autofocus></textarea>
+</body>
+<html>
